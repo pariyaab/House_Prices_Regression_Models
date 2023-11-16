@@ -1,0 +1,37 @@
+Here's a comprehensive summary of the steps that I have performed:
+
+1. **Loading the Dataset:**
+   - I started with loading the original dataset, which includes information about houses, into a DataFrame (let's call it `df`).
+
+2. **Data Merging:**
+   - I mentioned having three CSV files: `train.csv`, `test.csv`, and `sample_submission.csv`.
+   - Merged these files together to create the original dataset.
+   - Handled the situation where duplicate columns (`SalePrice_x`, `SalePrice_y`) were added during merging.
+
+3. **Data Cleaning:**
+   - Applied one-hot encoding to convert categorical features into numerical format.
+   - Applied Min-Max to numerical columns.
+   - Handled missing values, filling them with 0.
+   - Dropped unnecessary columns.
+
+4. **Data Splitting:**
+   - Split the dataset into train (80%), test (10%), and validation (10%) sets.
+   - Saved these sets into separate files.
+
+5. **Mutual Information (MI) Feature Selection:**
+   - Loaded the numerical dataset (`new_numerical_data.csv`).
+   - Applied label encoding to convert categorical features.
+   - Split the dataset into train, test, and validation sets (80-10-10).
+
+6. ** Find the best K value by corss-validation in validation set: **
+    - run KNeighborsRegressor 5 times on validation set
+    - find the best and minimum score of these t epoch accuracy
+    - selected best k as 9
+
+7. **K-NN Model:**
+
+   - Implemented K-NN regression.
+   - Used Mutual Information-selected features for training and testing.
+   - Ran K-NN on the test set using the best K (K=9).
+   - Evaluated the model using mean squared error (MSE) and R-squared. ( MSE = 0.003 and R-squared = 0.35)
+
