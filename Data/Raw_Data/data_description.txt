@@ -242,7 +242,7 @@ Exterior2nd: Exterior covering on house (if more than one material)
 MasVnrType: Masonry veneer type
 
        BrkCmn	Brick Common
-       BrkFace	Brick Face
+           BrkFace	Brick Face
        CBlock	Cinder Block
        None	None
        Stone	Stone

@@ -19,8 +19,8 @@ y_train = train_df['SalePrice']
 X_test = test_df[selected_features]
 
 
-# Train the K-NN model with the best K (9)
-knn = KNeighborsRegressor(n_neighbors=9)
+# Train the K-NN model with the best K (44)
+knn = KNeighborsRegressor(n_neighbors=44)
 knn.fit(X_train, y_train)
 
 
