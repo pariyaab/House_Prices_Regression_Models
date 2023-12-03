@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Load the datasets
-train_df = pd.read_csv("./Data/train.csv")
-test_df = pd.read_csv("./Data/test.csv")
-sample_submission_df = pd.read_csv("./Data/sample_submission.csv")
+train_df = pd.read_csv("../../Data/Raw_Data/train.csv")
+test_df = pd.read_csv("../../Data/Raw_Data/test.csv")
+sample_submission_df = pd.read_csv("../../Data/Raw_Data/sample_submission.csv")
 
 test_with_submission = pd.merge(test_df, sample_submission_df[['Id', 'SalePrice']], on='Id', how='left')
 
@@ -12,3 +12,4 @@ final_df = pd.concat([train_df, test_with_submission], axis=0, ignore_index=True
 
 # Save the merged dataset
 final_df.to_csv("./Data/Processed_Data/original_dataset.csv", index=False)
+# print(final_df.shape)

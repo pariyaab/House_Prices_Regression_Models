@@ -44,4 +44,5 @@ df = df.drop(columns=categorical_features)
 df = df.dropna()
 
 # Save the updated DataFrame
-df.to_csv('../../Data/Processed_Data/new_numerical_data.csv', index=False)
+# df.to_csv('../../Data/Processed_Data/new_numerical_data.csv', index=False)
+print(df.shape)
