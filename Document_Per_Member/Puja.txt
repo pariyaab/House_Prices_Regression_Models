@@ -1,0 +1,70 @@
+Here's a comprehensive summary of the steps that I have performed for support vector regression:
+
+
+1. **Data Loading and Splitting:**
+   - Loaded the numerical dataset (`new_numerical_data.csv`).
+   - Applied label encoding to convert categorical features.
+   - Split the dataset into train, test sets (80% and 20%).
+
+2. **Feature Scaling:**
+   - Standardizing features to ensure they're on a similar scale
+
+3. **SVR Initialization:**
+   - Initializing the SVR model without specifying hyperparameters
+
+
+4. **Hyperparameter Tuning:**
+   - Defining a grid of hyperparameters such as kernel types ('linear', 'rbf'), regularization parameter C, and gamma values ('scale', 'auto').
+
+5. **GridSearchCV for Hyperparameter Tuning:**
+    - Employing GridSearchCV with cross-validation to explore various combinations of hyperparameters. 
+    - The objective is to minimize the negative mean squared error (MSE) or maximize the model's performance on the training data.
+
+6. **Selection of Best Parameters and Model:**
+    - Identifying the optimal hyperparameters and the best-performing SVR model based on the chosen evaluation metric.
+
+7. **Model Training and Prediction:**
+    - Fitting the best SVR model (with optimal hyperparameters) to the training data and using it to predict housing prices on the test set.
+   - Evaluated the model using mean squared error (MSE) and R-squared. ( MSE = 0.004 and R-squared = 0.0305)
+
+
+
+
+
+And the steps that I have performed for gradient boosting regression:
+
+
+1. **Data Loading and Splitting:**
+   - Loaded the numerical dataset (`new_numerical_data.csv`).
+   - Applied label encoding to convert categorical features.
+   - Split the dataset into train, test sets (80% and 20%).
+
+2. **Feature Scaling:**
+   - Standardizing features to ensure they're on a similar scale
+
+3. **SVR Initialization:**
+   - Initializing the GBR model without specifying hyperparameters
+
+
+4. **Hyperparameter Tuning:**
+   - Defining a grid of hyperparameters such as n_estimators (100, 200, 400), rlearning rate (0.1, 0.05, 0.01), and max_depth (3,4,5).
+
+5. **GridSearchCV for Hyperparameter Tuning:**
+    - Employing GridSearchCV with cross-validation to explore various combinations of hyperparameters. 
+    - The objective is to minimize the negative mean squared error (MSE) or maximize the model's performance on the training data.
+
+6. **Selection of Best Parameters and Model:**
+    - Identifying the optimal hyperparameters and the best-performing GBR model based on the chosen evaluation metric.
+
+7. **Model Training and Prediction:**
+    - Fitting the best SVR model (with optimal hyperparameters) to the training data and using it to predict housing prices on the test set.
+   - Evaluated the model using mean squared error (MSE) and R-squared. ( MSE = 0.001 and R-squared = 0.6703)
+
+
+
+
+
+
+
+
+
