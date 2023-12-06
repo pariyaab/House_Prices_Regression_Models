@@ -1,4 +1,13 @@
-House Price Prediction Project
-Overview
+# House Price Prediction Project
+## Overview
 
-This project focuses on predicting house prices using machine learning techniques. The primary goal is to develop a model that accurately predicts the sale price of houses based on various features such as size, location, and amenities.
+This repository encompasses a comprehensive machine learning project centered around predicting house prices. The project employs multiple regression algorithms, including Linear Regression, Ridge Regression, Lasso Regression, Gradient Boosting Regression, Random Forest Regression, Support Vector Regression, and K Nearest Neighbors.
+### Algorithms Implemented
+
+    Linear Regression
+    Ridge Regression
+    Lasso Regression
+    Gradient Boosting Regression
+    Random Forest Regression
+    Support Vector Regression
+    K Nearest Neighbors
